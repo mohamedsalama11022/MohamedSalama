@@ -1,0 +1,15 @@
+---
+# tasks file for initialize
+- name: update system
+  yum:
+    name: "*"
+    state: latest
+
+- name: Install OpenJDK 1.8
+  yum:
+    name: java-1.8.0-openjdk.x86_64 
+
+- name: Create a directory named app and cd into the directory.
+  file:
+    path: /{{file_name}}
+    state: directory
