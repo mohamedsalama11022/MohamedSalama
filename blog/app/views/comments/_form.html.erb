@@ -1,0 +1,11 @@
+<%=form_for([@post, @post.comments.build])  do |f| %>
+
+
+
+<%= f.text_area(:post, placeholder: "Coment.....", class: "form-control" ,rows: 5) %> 
+<%=  submit_tag "Comment", class: "btn btn-success btn-block" %> 
+
+<%end%>
+
+
+

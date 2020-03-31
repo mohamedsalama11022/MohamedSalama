@@ -1,0 +1,14 @@
+<%= form_tag(posts_path, method: "post") do %>
+<%# the form first parameter is the URL and the second on is method %>
+    <div class="form-group">
+        <%= text_field_tag(:title, nil, placeholder: "Title.....", class: "form-control" ,size: "24x6") %>  
+        <%# the first parameter is the variable name which refer to conumn name in the database%>
+        <%# second one is the value of tag%>
+    </div>
+    <div class = "form-group">
+        <%= text_area_tag(:content, nil, placeholder: "Content.....", class: "form-control" ,rows: 5) %> 
+  </div>
+  <%=  submit_tag "Create" , class: "btn btn-success btn-block" %> 
+<% end %>
+
+
