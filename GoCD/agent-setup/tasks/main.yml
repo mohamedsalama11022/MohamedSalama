@@ -1,7 +1,0 @@
----
-# tasks file for agent-setup
-  
-- name: Installing GoCD Agent on Linux
-  yum:
-    name: go-agent
-    state: latest

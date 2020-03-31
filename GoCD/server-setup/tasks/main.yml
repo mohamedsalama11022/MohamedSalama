@@ -1,6 +1,0 @@
----
-# tasks file for server-setup
-- name: start GoCD
-  service:
-      name: go-server
-      state: started
